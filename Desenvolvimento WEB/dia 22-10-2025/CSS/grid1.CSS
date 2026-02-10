@@ -1,0 +1,32 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; /*quanto mais ***px for colocado, mas colunas terá*/
+    grid-template-rows: 10% 80% 10%;
+    grid-gap:5px;
+    grid-template-areas: "cabecalho cabecalho"
+                         "principal area-principal"
+                         "rodape rodape";
+}
+header{
+    background-color: rgb(136, 6, 6);
+    grid-area: cabecalho;
+}
+main{
+    background-color: rgb(6, 136, 125);
+    grid-area: principal;
+}
+aside{
+    background-color: rgb(136, 6, 129);
+    grid-area: area-principal;
+}
+footer{
+    background-color: rgb(90, 136, 6);
+    grid-area: rodape;
+}
